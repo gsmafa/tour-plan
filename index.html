@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
 	rel="stylesheet">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -66,9 +67,75 @@
 			</div>
 		</section>
 	<!-- /.header -->
-	<section class="main">
+	<section class="hotel">
 		<div class="container">
-			<div class="row"></div>
+			<div class="row hotel-info__top">
+				<div class="hotel-info__top-left">
+					<div class="hotel__stars">
+						<img src="image/star.svg" alt="Hotel Star">
+						<img src="image/star.svg" alt="Hotel Star">
+						<img src="image/star.svg" alt="Hotel Star">
+						<img src="image/star.svg" alt="Hotel Star">
+						<img src="image/star.svg" alt="Hotel Star">
+					</div>
+					<h1 class="hotel__name">GRAND HILTON HOTEL</h1>
+					<span class="hotel__offer">Flash Offer</span>
+					<p class="hotel__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
+				</div>
+				<div class="hotel-info__top-right">
+					<div class="hotel__rating">
+						<span class="hotel__rating-text">User rating</span>
+						<span class="hotel__rating-digit">4.5/<span>5</span></span>
+					</div>
+				</div>
+			</div>
+			<div class="row hotel-info__bottom">
+				<div class="hotel-info__bottom-left">
+					<div class="hotel__slider">
+						<!-- Slider main container -->
+						<div class="swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<img src="image/hotel-imag-1.jpg" alt="Pansionat" class="slider-image">
+								</div>
+								<div class="swiper-slide">
+									<img src="image/hotel-imag-1.jpg" alt="Pansionat" class="slider-image">
+								</div>
+								<div class="swiper-slide">
+									<img src="image/hotel-imag-1.jpg" alt="Pansionat" class="slider-image">
+								</div>
+							</div>
+							<!-- If we need navigation buttons -->
+							<button class="swiper-button swiper-button--prev"></button>
+							<button class="swiper-button swiper-button--next"></button>
+						</div>
+						<!-- |.swiper -->						
+					</div>
+				</div>
+				<div class="hotel-info__bottom-right">
+					<div class="hotel__quick-booking">
+						<div class="price-booking">
+							<span class="price-as">price starts as</span>
+							<span class="price">$ 8,500</span>
+							<span class="per">per room / night</span>
+						</div>
+						<div class="guests-room">
+							<span class="guests"><img src="image/guests.svg" alt="Guests">2 x Guests</span>
+							<span class="room"><img src="image/home.svg" alt="Room">1 x Room</span>
+						</div>
+						<div class="quick-booking">
+							<span class="text">Quick Booking</span>
+							<span class="phone"><img src="image/phone-call.svg" alt="Phone">12100</span>
+						</div>
+						<a href="#" class="button">View Other Options</a>
+					</div>
+					<div class="hotel__map">
+						<img src="image/map.jpg" alt="Hotel In Map">
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- /.main -->	
@@ -88,5 +155,7 @@
 		</div>
 	</footer>
 	<!-- /.footer -->
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
