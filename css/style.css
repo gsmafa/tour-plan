@@ -539,9 +539,6 @@ template {
 .hotel-info__bottom-left {
   max-width: 728px;
   max-height: 450px;
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  border-radius: 8px;
-  position: relative;
 }
 
 .hotel .swiper {
@@ -581,11 +578,11 @@ template {
 }
 .hotel .swiper-button--prev {
   left: 18px;
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(../image/arrow-left.svg);
 }
 .hotel .swiper-button--next {
   right: 18px;
-  background-image: url(../img/arrow-right.svg);
+  background-image: url(../image/arrow-right.svg);
 }
 .hotel__quick-booking {
   max-width: 350px;
