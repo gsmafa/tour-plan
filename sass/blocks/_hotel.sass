@@ -54,12 +54,15 @@
 		max-width: 450px
 	&__bottom
 		display: flex
-		align-items: center
 		justify-content: space-between
 		padding-bottom: 70px
 	&__bottom-left
 		max-width: 728px
 		max-height: 450px
+	&__bottom-right
+		display: flex
+		flex-direction: column
+		justify-content: space-between
 .hotel
 	.swiper
 		width: 728px
@@ -76,7 +79,7 @@
 			bottom: 0
 			left: 0
 			right: 0
-			background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+			//background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
 		&-button
 			width: 30px
 			height: 30px
@@ -99,19 +102,18 @@
 				right: 18px
 				background-image: url(../image/arrow-right.svg)
 	&__quick-booking
-		max-width: 350px
-		min-height: 210px
-		display: flex
-		flex-wrap: wrap
-		background: #0A223D
+		width: 350px
+		height: 210px
+		background: $dark
 		border-radius: 8px
-		margin-bottom: 24px
 		color: $white
-		padding: 26px 29px
+		padding: 26px
+.price-room
+	display: flex
+	justify-content: space-between
 .price-booking
 	display: flex
 	flex-direction: column
-	margin-right: 120px
 .price-as
 	font-size: 10px
 	line-height: 14px
@@ -129,34 +131,43 @@
 	line-height: 16px
 .guests
 	margin-bottom: 8px
-	img
-		margin-right: 9px
-		float: left
+	display: flex
+	justify-content: space-between
+	span
+		margin-left: 9px
 .room
-	img
-		margin-right: 9px
-		float: left
+	display: flex
+	justify-content: space-between
+	span
+		margin-left: 9px
 .quick-booking
 	display: flex
 	align-items: center
 	justify-content: space-between
-	flex-basis: 100%
+	flex-basis: 97.9%
 	font-weight: 600
 	font-size: 18px
 	line-height: 25px
+	margin-top: 9px
 .phone
-	img
-		margin-right: 9px
+	text-decoration: none
+	color: $white
+	display: flex
+	justify-content: space-between
+	span
+		margin-left: 9px
 .button
-	max-width: 295px
-	max-height: 45px
+	width: 100%
+	min-height: 45px
 	display: inline-block
 	background: $primary
-	padding: 11px 80px
 	font-weight: 600
 	font-size: 14px
-	line-height: 19px
+	line-height: 45px
 	color: $white
 	text-decoration: none
+	text-align: center
 	border-radius: 4px
 	margin-top: 17px
+iframe
+	border-radius: 10px
