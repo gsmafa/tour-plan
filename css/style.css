@@ -179,7 +179,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
+  font-family: "Mulish", sans-serif;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -581,11 +581,11 @@ template {
 }
 .hotel .swiper-button--prev {
   left: 18px;
-  background-image: url(../image/arrow-left.svg);
+  background-image: url(../image/white-arrow-left.svg);
 }
 .hotel .swiper-button--next {
   right: 18px;
-  background-image: url(../image/arrow-right.svg);
+  background-image: url(../image/white-arrow-right.svg);
 }
 .hotel__quick-booking {
   width: 350px;
@@ -684,6 +684,155 @@ template {
 
 iframe {
   border-radius: 10px;
+}
+
+.newsletter {
+  position: relative;
+  background: rgba(10, 34, 61, 0.8);
+  padding-top: 98px;
+  padding-bottom: 87px;
+}
+.newsletter .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.newsletter ::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url(../../image/newsletter.jpg);
+}
+.newsletter__text-subscribe {
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+.newsletter__text-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+}
+.newsletter__form-subscribe {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  height: 55px;
+}
+.newsletter__form-subscribe-input {
+  width: 350px;
+  height: 100%;
+  border: none;
+  padding-left: 33px;
+  padding-right: 70px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333;
+}
+.newsletter__form-subscribe-button {
+  position: absolute;
+  right: 0;
+  width: 65px;
+  height: 100%;
+  border: 0;
+  background-color: #EC1F46;
+}
+.newsletter__form-subscribe-text {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.about-us {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.about-us__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+.about-us__slider {
+  max-width: 730px;
+  min-height: 280px;
+}
+.about-us__slider .swiper-button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  z-index: 2;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+.about-us__slider .swiper-button--prev {
+  left: 18px;
+  background-image: url(../image/gray-arrow-left.svg);
+}
+.about-us__slider .swiper-button--next {
+  right: 18px;
+  background-image: url(../image/gray-arrow-right.svg);
+}
+.about-us__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 0 96px 30px 96px;
+  border-radius: 8px;
+}
+.about-us__slide-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-us__slide-name {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+  margin-bottom: 10px;
+}
+.about-us__slide-stayed-date {
+  font-size: 10px;
+  line-height: 13px;
+  margin-bottom: 4px;
+}
+.about-us__slide-rating {
+  margin-bottom: 32px;
+  height: 10px;
+  line-height: 7px;
+}
+.about-us__slide-rating-star {
+  width: 8px;
+  height: 8px;
 }
 
 @media (max-width: 1200px) {
@@ -792,6 +941,36 @@ iframe {
   iframe {
     width: 100%;
   }
+
+  .newsletter {
+    padding-top: 76px;
+    padding-bottom: 83px;
+  }
+  .newsletter .container {
+    align-items: flex-start;
+  }
+  .newsletter__text {
+    margin-bottom: 37px;
+  }
+  .newsletter__text-subscribe {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter__text-title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .newsletter__form-subscribe {
+    width: 280px;
+  }
+
+  .about-us {
+    padding-bottom: 36px;
+  }
+  .about-us__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -804,5 +983,16 @@ iframe {
 
   .hotel .swiper {
     height: 250px;
+  }
+
+  .newsletter .container {
+    flex-direction: column;
+  }
+
+  .about-us__slide {
+    padding: 0 31px 36px 31px;
+  }
+  .about-us__slider .swiper-button {
+    top: 0;
   }
 }/*# sourceMappingURL=style.css.map */

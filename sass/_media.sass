@@ -75,6 +75,27 @@
 				min-height: 450px
 	iframe
 		width: 100%
+	.newsletter
+		padding-top: 76px
+		padding-bottom: 83px
+		.container
+			align-items: flex-start
+		&__text
+			margin-bottom: 37px
+			&-subscribe
+				font-size: 20px
+				line-height: 25px
+			&-title
+				font-size: 30px
+				line-height: 38px
+		&__form
+			&-subscribe
+				width: 280px
+	.about-us
+		padding-bottom: 36px
+		&__title
+			font-size: 18px
+			line-height: 23px
 @media ( max-width: 576px)
 	.logo
 		width: 99px
@@ -85,3 +106,12 @@
 	.hotel
 		.swiper
 			height: 250px
+	.newsletter
+		.container
+			flex-direction: column
+	.about-us
+		&__slide
+			padding: 0 31px 36px 31px
+		&__slider
+			.swiper-button
+				top: 0
