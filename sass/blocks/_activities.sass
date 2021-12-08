@@ -1,0 +1,58 @@
+.activities
+	padding: 60px 0 98px
+	&-title
+		font-style: normal
+		font-weight: bold
+		font-size: 24px
+		line-height: 30px
+		text-transform: uppercase
+		margin-top: 0
+		margin-bottom: 57px
+	&-blocks
+		display: flex
+		justify-content: space-between
+		&__type
+			width: 255px
+			height: 255px
+			position: relative
+			display: flex
+			flex-direction: column
+			border-radius: 6px
+			overflow: hidden
+			&::before
+				content: ''
+				width: 255px
+				height: 255px
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, $dark 99.85%)
+		&__image
+			height: 100%
+			object-fit: cover
+		&__title
+			width: 80%
+			position: absolute
+			left: 26px
+			bottom: 72px
+			font-style: normal
+			font-weight: bold
+			font-size: 16px
+			line-height: 20px
+			color: $white
+		&__button
+			position: absolute
+			left: 26px
+			bottom: 24px
+			background: red
+			padding: 7px 21px
+			border-radius: 4px
+			text-decoration: none
+			color: $white
+			text-align: center
+			font-style: normal
+			font-weight: 600
+			font-size: 12px
+			line-height: 16px
