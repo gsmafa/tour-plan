@@ -1,0 +1,52 @@
+/*-------- Media queries for 1200px --------*/
+@media (max-width: 1200px)
+	.packages
+		&-varieties
+			grid-template-columns: 1fr 1fr 1fr 1fr
+			&__offer
+				grid-column: span 2
+				&-first
+					grid-column: span 4
+/*-------- Media queries for 992px --------*/
+@media (max-width: 992px)
+	.packages
+		&-varieties
+			grid-template-columns: 1fr 1fr
+			&__offer
+				grid-column: span 1
+				&-first
+					grid-column: span 2
+/*-------- Media queries for 768px --------*/
+@media (max-width: 768px)
+	.packages
+		&-varieties
+			&__offer
+				&-info
+					padding: 25px 20px
+				&-first
+					&-info
+						padding: 25px 20px
+/*-------- Media queries for 576px --------*/
+@media ( max-width: 576px)
+	.packages
+		&-varieties
+			grid-template-columns: 1fr
+			&__offer
+				&-first
+					grid-column: span 1
+					grid-template-columns: 1fr
+					grid-template-rows: 1fr 1fr
+					&-image
+						height: 50%
+/*-------- Media queries for 320px --------*/
+@media ( max-width: 320px)
+	.packages
+		&-varieties
+			&__prices
+				&-new
+					&-price
+						font-size: 20px
+			&__button
+				min-width: 100px
+				min-height: 30px
+				padding: 8px 20px
