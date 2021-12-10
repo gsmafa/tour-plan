@@ -36,12 +36,25 @@
 					grid-column: span 1
 					grid-template-columns: 1fr
 					grid-template-rows: 1fr 1fr
-					&-image
-						height: 50%
+			&__text
+				display: none
+			&__services
+				&-address,&-guest,&-room
+					grid-template-columns: 5% 90%
+/*-------- Media queries for 417px --------*/
+@media ( max-width: 417px)
+	.packages
+		&-varieties
+			&__services
+				&-address,&-guest,&-room
+					grid-template-columns: 7% 90%
 /*-------- Media queries for 320px --------*/
 @media ( max-width: 320px)
 	.packages
 		&-varieties
+			&__services
+				&-address,&-guest,&-room
+					grid-template-columns: 10% 90%
 			&__prices
 				&-new
 					&-price
