@@ -21,11 +21,11 @@
 	.packages
 		&-varieties
 			&__offer
-				&-info
-					padding: 25px 20px
 				&-first
 					&-info
 						padding: 25px 20px
+			&__info
+				padding: 25px 20px
 /*-------- Media queries for 576px --------*/
 @media ( max-width: 576px)
 	.packages
@@ -36,6 +36,8 @@
 					grid-column: span 1
 					grid-template-columns: 1fr
 					grid-template-rows: 1fr 1fr
+					&-services
+						margin-bottom: 24px
 			&__text
 				display: none
 			&__services
