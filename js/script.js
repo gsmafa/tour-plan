@@ -1,7 +1,6 @@
 /*------------- Toggle menu -------------*/
 var buttonToggle = document.querySelector('.hamburger');
 buttonToggle.addEventListener('click', function() {
-	console.log('I am menu');
 	document.querySelector('.menu-mobile--hidden').classList.toggle('menu-mobile--visible');
 })
 /*------------ Slider Swiper Block Hotel ------------*/
