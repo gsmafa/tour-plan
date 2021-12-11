@@ -1,6 +1,10 @@
 .footer
 	padding: 108px 0 46px
 	background-color: $dark
+	&-wrapper
+		display: grid
+		grid-template-columns: repeat(4, minmax(min-content, 1fr))
+		grid-template-rows: repeat(7, minmax(40px, min-content))
 	&__title
 		color: $white
 		text-transform: uppercase
@@ -17,38 +21,106 @@
 		font-weight: normal
 		font-size: 14px
 		line-height: 160%
-	&-top
-		display: grid
-		grid-template-columns: repeat(4, minmax(min-content, 1fr))
-		grid-template-rows: repeat(9, 27px)
-		&__logo
-			grid-row: 2
-		&__categories
-			grid-column: 2
-			grid-row: 1/3
-		&__additional
-			grid-column: 3/5
-			grid-row: 1/2
-		&__social
-			grid-column: 3/5
-			grid-row: 8
-			display: flex
-			align-items: center
-		.social
-			&--title
-				margin-bottom: 0
-				margin-right: 43px
-		&__legal
-			grid-column: 4
-			grid-row: 1
-			justify-self: end
+	&__logo
+		width: 166px
+		align-self: center
+		grid-row: 1 / 3
+	&__categories
+		grid-column: 2
+		grid-row: 1 / 3
 	&__social
+		grid-column: span 2
+		grid-row: 2 / 3
+		display: flex
+		align-items: flex-end
+	.social
+		&-title
+			margin-bottom: 0
+			margin-right: 43px
+	&__icon:not(:last-child)
+		margin-right: 12px
+	&__legal
+		grid-column: 4
+		grid-row: 1
+		justify-self: end
+	&__contacts
+		grid-column: span 2
+		grid-row: 5 / 6
+		color: $footer-text-color
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 160%
+	&__contact
+		display: grid
+		grid-template-columns: minmax(30px, min-content)
 		&:not(:last-child)
-			margin-right: 12px
-	&-middle
-		&__contacts
-			color: $footer-text-color
-			font-style: normal
-			font-weight: normal
-			font-size: 14px
-			line-height: 160%
+			margin-bottom: 26px
+		&-icon
+			grid-column: 1
+			align-self: center
+	&__text
+		margin-top: 0
+		margin-bottom: 26px
+	&__address,&__phone,&__email
+		grid-column: 2
+	&__message
+		grid-column: span 2
+		grid-row: 5 / 6
+	&__form
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-column-gap: 30px
+	&__input,&__textarea
+		font-style: normal
+		font-weight: normal
+		font-size: 12px
+		line-height: 15px
+		padding: 18px 23px
+		border-radius: 4px
+		border: none
+	&__input
+		margin-bottom: 15px
+		&:focus
+			outline: none
+	&__textarea
+		margin-bottom: 23px
+		grid-column: span 2
+		&:focus
+			outline: none
+	&__button
+		min-width: 160px
+		min-height: 50px
+		border-radius: 4px
+		border: none
+		background: $primary
+		color: $white
+		font-style: normal
+		font-weight: bold
+		font-size: 12px
+		line-height: 15px
+		grid-column: 1
+		justify-self: self-start
+	&__required
+		font-style: normal
+		font-weight: bold
+		font-size: 12px
+		line-height: 15px
+		color: $footer-text-color
+		grid-column: 2
+		grid-row: 3
+		align-self: center
+		justify-self: end
+	&__disclaimer
+		grid-row: 7
+		grid-column: 2 / 4
+		&-list
+			display: flex
+			justify-content: center
+		&-item
+			&:not(:last-child)
+				margin-right: 15px
+	&__cards
+		grid-row: 7
+		grid-column: 4
+		justify-self: center
