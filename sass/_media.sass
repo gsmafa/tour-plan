@@ -12,22 +12,19 @@
 		&-blocks
 			&__type
 				width: 225px
-				height: 225px				
+				height: 225px
 @media (max-width: 992px)
 	.container
 		max-width: 700px
 	.logo
 		width: 132px
 	.header
-		.header
-			&-top
-				padding: 30px 0
-			&-menu
-				padding: 22px 0
-			&__search
-				margin-left: auto
-			&__input
-				width: 340px
+		&-top
+			padding: 30px 0
+		&-menu
+			padding: 22px 0
+		&__input
+			width: 340px
 	.menu
 		&__link
 			font-size: 12px
@@ -56,29 +53,68 @@
 			&__type
 				width: 339px
 				&:nth-child(1),&:nth-child(2)
-					margin-bottom: 20px				
+					margin-bottom: 20px
 @media (max-width: 768px)
+	body
+		padding-top: 82px
 	.container
 		max-width: 576px
 		width: 95%
 	.header
-		.search,.user,.header-menu
-			display: none
-		.hamburger
-			width: 16px
-			height: 11px
-			display: flex
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 99
+		&-menu
+			&__mobile
+				&--hidden
+					display: none
+	.search, .user
+		&__mobile
+			&--hidden
+				display: none
+	.user
+		flex-direction: column
+		margin-bottom: 20px
+		&__avatar
+			margin-bottom: 10px
+		&__name
+			margin-left: 0
+			color: $white
+	.search
+		margin-bottom: 20px
+	.menu
+		display: flex
+		flex-direction: column
+		align-items: center
+		&-mobile
+			&--visible
+				display: block
+				position: fixed
+				top: 82px
+				left: 0
+				right: 0
+				bottom: 0
+		&__list
 			flex-direction: column
-			align-items: center
-			justify-content: space-between
-			border: none
-			background-color: $white
-			&:focus
-				outline: 0
-			&__line
-				width: 16px
-				height: 1px
-				background-color: $text-color
+		&__item
+			margin-bottom: 20px
+	.hamburger
+		width: 16px
+		height: 11px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-between
+		border: none
+		background-color: $white
+		&:focus
+			outline: 0
+		&__line
+			width: 16px
+			height: 1px
+			background-color: $text-color
 	.hotel
 		.swiper
 			height: 350px
@@ -130,7 +166,7 @@
 		padding: 40px 0 60px
 		&-blocks
 			&__type
-				width: 268px				
+				width: 268px
 @media ( max-width: 576px)
 	.logo
 		width: 99px
@@ -154,7 +190,7 @@
 				width: 100%
 				height: 255px
 				&:nth-child(3)
-					margin-bottom: 20px				
+					margin-bottom: 20px
 @media ( max-width: 320px)
 	.subscribe
 		width: 220px
