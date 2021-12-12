@@ -1235,6 +1235,7 @@ iframe {
   outline: none;
 }
 .footer__textarea {
+  min-height: 255px;
   margin-bottom: 23px;
   grid-column: span 2;
 }
