@@ -19,13 +19,13 @@
 				<a href="#" class="logo">
 					<img src="image/logo_horizontal.svg" alt="Logo: Best Tour Plan" class="logo__image">
 				</a>
-				<form action="#" class="search header__search search__mobile--hidden">
+				<form action="#" class="search header__search search-mobile-hidden">
 					<input type="text" class="search__input" placeholder="Search Location">
 					<button class="search__button">
 						<img src="image/search_icon.svg" alt="Icon: search" class="search__icon">
 					</button>
 				</form>
-				<a href="#" class="user user__mobile--hidden">
+				<a href="#" class="user user-mobile-hidden">
 					<img src="image/user_avatar.jpg" alt="Avatar: Natan" class="user__avatar">
 					<span class="user__name">Natan</span>
 				</a>
@@ -38,7 +38,7 @@
 			<!-- .header-top -->
 		</div>
 		<!-- /.container -->
-			<div class="header-menu header-menu__mobile--hidden">
+			<div class="header-menu header-menu-mobile-hidden">
 				<div class="container">
 					<nav class="menu">
 						<ul class="menu__list">
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 			<!-- .header-menu -->
-			<div class="header-menu menu-mobile--hidden">
+			<div class="header-menu menu-mobile-hidden">
 				<div class="container">
 					<nav class="menu">
 						<a href="#" class="user">
@@ -79,7 +79,7 @@
 					</nav>
 				</div>
 			</div>
-			<!-- .header-menu--mobile -->
+			<!-- .header-menu -->
 		</header>
 		<section class="breadcrumb">
 			<h2 class="breadcrumb__title">Breadcrumb</h2>
@@ -198,7 +198,7 @@
 							<span class="text">Quick Booking</span>
 							<a href="tel:12100" class="phone"><img src="image/phone-call.svg" alt="Phone"><span>12100</span></a>
 						</div>
-						<a href="#" class="button">View Other Options</a>
+						<button class="button button-quick-booking">View Other Options</button>
 					</div>
 					<div class="hotel__map">
 						<iframe
@@ -578,6 +578,46 @@
 		</div>
 	</footer>
 	<!-- /.footer -->
+	<div class="modal modal-rating">
+		<div class="modal__overlay modal-rating__overlay"></div>
+		<!-- /.model__overlay -->
+		<div class="modal__dialog modal-rating__dialog">
+			<a href="#" class="modal-rating__close">
+				<img src="image/close.svg" alt="icon: close">
+			</a>
+			<h3 class="modal__title">Send us feedback</h3>
+			<form action="send.php" method="POST" class="modal__form">
+				<input type="text" name="name" class="modal__input" placeholder="Your Full Name*">
+				<input type="tel" name="phone" class="modal__input" placeholder="Phone Number*">
+				<input type="email" name="email" class="modal__input" placeholder="Email*">
+				<textarea name="message" class="modal__textarea" placeholder="Message"></textarea>
+				<span class="modal__required">* Required Fields</span>
+				<button class="modal__button">Send</button>
+			</form>
+		</div>
+		<!-- /.model__dialog -->
+	</div>
+	<!-- /.modal.modal-rating -->
+	<div class="modal modal-booking">
+		<div class="modal__overlay modal-booking__overlay"></div>
+		<!-- /.model__overlay -->
+		<div class="modal__dialog modal-booking__dialog">
+			<a href="#" class="modal-booking__close">
+				<img src="image/close.svg" alt="icon: close">
+			</a>
+				<h3 class="modal__title">Booking</h3>
+				<form action="send.php" method="POST" class="modal__form">
+					<input type="text" name="name" class="modal__input" placeholder="Your Full Name*">
+					<input type="tel" name="phone" class="modal__input" placeholder="Phone Number*">
+					<input type="email" name="email" class="modal__input" placeholder="Email*">
+					<textarea name="message" class="modal__textarea" placeholder="Message"></textarea>
+					<span class="modal__required">* Required Fields</span>
+					<button class="modal__button">Send</button>
+				</form>
+		</div>
+		<!-- /.model__dialog -->
+	</div>
+	<!-- /.modal.modal-booking -->
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<script src="js/script.js"></script>

@@ -30,6 +30,7 @@
 		border-radius: 4px
 		background-color: $primary
 		color: $white
+		cursor: pointer
 	&__rating-text
 		font-weight: 600
 		font-size: 8px
@@ -101,13 +102,14 @@
 			&--next
 				right: 18px
 				background-image: url(../image/white-arrow-right.svg)
-	&__quick-booking
-		width: 350px
-		height: 210px
-		background: $dark
-		border-radius: 8px
-		color: $white
-		padding: 26px
+	&__quick
+		&-booking
+			width: 350px
+			height: 210px
+			background: $dark
+			border-radius: 8px
+			color: $white
+			padding: 26px
 .price-room
 	display: flex
 	justify-content: space-between
@@ -137,15 +139,16 @@
 .room
 	display: flex
 	justify-content: space-between
-.quick-booking
-	display: flex
-	align-items: center
-	justify-content: space-between
-	flex-basis: 97.9%
-	font-weight: 600
-	font-size: 18px
-	line-height: 25px
-	margin-top: 9px
+.quick
+	&-booking
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-basis: 97.9%
+		font-weight: 600
+		font-size: 18px
+		line-height: 25px
+		margin-top: 9px
 .phone
 	text-decoration: none
 	color: $white
@@ -155,16 +158,16 @@
 		margin-left: 9px
 .button
 	width: 100%
-	min-height: 45px
-	display: inline-block
 	background: $primary
 	font-weight: 600
 	font-size: 14px
 	line-height: 45px
 	color: $white
-	text-decoration: none
-	text-align: center
 	border-radius: 4px
 	margin-top: 17px
+	border: 0
+	cursor: pointer
+	&:focus
+		outline: none
 iframe
 	border-radius: 10px
