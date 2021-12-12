@@ -2,6 +2,9 @@
 var buttonToggle = document.querySelector('.hamburger');
 buttonToggle.addEventListener('click', function() {
 	document.querySelector('.menu-mobile--hidden').classList.toggle('menu-mobile--visible');
+	document.querySelector('.hamburger__line-top').classList.toggle('hamburger__line-top--transform');
+	document.querySelector('.hamburger__line-middle').classList.toggle('hamburger__line-middle--none');
+	document.querySelector('.hamburger__line-bottom').classList.toggle('hamburger__line-bottom--transform');
 })
 /*------------ Slider Swiper Block Hotel ------------*/
 const hotelSlider = new Swiper('.hotel__slider', {

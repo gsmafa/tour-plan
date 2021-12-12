@@ -114,6 +114,17 @@
 			width: 16px
 			height: 1px
 			background-color: $text-color
+			&-top
+				&--transform
+					transform: rotate(45deg) translate(1px, 5px)
+					width: 20px
+			&-bottom
+				&--transform
+					transform: rotate(-45deg) translate(1px, -5px)
+					width: 20px
+			&-middle
+				&--none
+					display: none
 	.hotel
 		.swiper
 			height: 350px
