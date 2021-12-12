@@ -5,17 +5,13 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
+$email = $_POST['email'];
 
 // Формирование самого письма
-$title = "New message Best Tour Plan";
+$title = "New subscriber Best Tour Plan";
 $body = "
-<h2>New message</h2>
-<b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br><br>
-<b>Message:</b><br>$message
+<h2>New subscriber</h2>
+<b>Email:</b> $email<br>
 ";
 
 // Настройки PHPMailer
@@ -24,7 +20,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    //$mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -67,4 +63,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+header('Location: subscriber.html');
