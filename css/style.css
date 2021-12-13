@@ -1474,6 +1474,15 @@ iframe {
   .activities-blocks__type:nth-child(1), .activities-blocks__type:nth-child(2) {
     margin-bottom: 20px;
   }
+
+  .modal-booking__dialog, .modal-rating__dialog {
+    top: 35%;
+    left: 25%;
+    right: 25%;
+    transform: translate(0%, -35%);
+    max-width: 100%;
+    padding: 33px 44px;
+  }
 }
 @media (max-width: 767px) {
   body {
@@ -1635,6 +1644,10 @@ iframe {
     width: 268px;
   }
 
+  .modal-booking__dialog, .modal-rating__dialog {
+    left: 15%;
+    right: 15%;
+  }
   .modal__required {
     grid-column: 1;
     grid-row: 5;
@@ -1685,10 +1698,19 @@ iframe {
   .modal__input {
     padding: 15px;
   }
+  .modal-booking__dialog, .modal-rating__dialog {
+    left: 5%;
+    right: 5%;
+  }
 }
 @media (max-width: 360px) {
   .search__input {
     width: 250px;
+  }
+
+  .modal-booking__dialog, .modal-rating__dialog {
+    left: 0%;
+    right: 0%;
   }
 }
 @media (max-width: 320px) {
