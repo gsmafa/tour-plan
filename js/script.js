@@ -24,7 +24,7 @@ const hotelSlider = new Swiper('.hotel__slider', {
 var buttonModal = document.querySelector('.hotel__rating');
 buttonModal.addEventListener('click', function() {
 	document.querySelector('.modal-rating__overlay').classList.add('modal-rating__overlay--visible');
-	document.querySelector('.modal-rating__dialog').classList.add('modal-rating__dialog--visible');
+	document.querySelector('.modal-rating__dialog').classList.add('modal-rating__dialog--visible');	
 });
 var closeModal = document.querySelector('.modal-rating__close');
 closeModal.addEventListener('click', function() {

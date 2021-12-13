@@ -1296,7 +1296,7 @@ iframe {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 1s;
 }
 .modal-booking__overlay--visible, .modal-rating__overlay--visible {
   visibility: visible;
@@ -1315,7 +1315,7 @@ iframe {
   z-index: 101;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 1s;
 }
 .modal-booking__dialog--visible, .modal-rating__dialog--visible {
   visibility: visible;
@@ -1379,6 +1379,10 @@ iframe {
   line-height: 15px;
   grid-column: 1;
   grid-row: 5;
+  cursor: pointer;
+}
+.modal__button:focus {
+  outline: none;
 }
 .modal__required {
   font-style: normal;
